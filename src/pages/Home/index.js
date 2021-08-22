@@ -1,8 +1,8 @@
-import './App.css';
+import '../../App.css';
 import React, { useState } from 'react';
 import axios from 'axios';
 
-//PAREI NA AULA 4, 14:00
+
 function App(props) {
   const [usuario, setUsuario] = useState('');
   function handlePesquisa() {
