@@ -10,6 +10,7 @@
       repositoriesName = JSON.parse(repositoriesName);
       console.log(repositoriesName);
       setRepositories(repositoriesName);
+      localStorage.clear();
     }, []);
 
      return (
@@ -18,8 +19,8 @@
        <S.List>
         { repositories.map(repository => {
           return (
-            <S.ListItem> { repository } </S.ListItem>
-          )
+            <S.ListItem> Repositório: { repository } </S.ListItem>
+          ) 
         })} 
        </S.List>
       </S.Container>
