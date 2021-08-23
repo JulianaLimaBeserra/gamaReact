@@ -20,6 +20,7 @@ function App(props) {
       });
 
       localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
+      history.push('/repositories');
     
     });
   }
